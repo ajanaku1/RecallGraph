@@ -63,4 +63,7 @@ We also learned that fixture accessibility and sponsor proof should be separate.
 
 ## Links
 
-Public repository, live deployment, demo video, and feedback survey links are inserted during the authorized publish step.
+- Public repository: https://github.com/ajanaku1/RecallGraph
+- Live application: https://recallgraph.vercel.app
+- Feedback survey: https://github.com/ajanaku1/RecallGraph/issues/new?template=feedback.yml
+- Demo video: Not included in this release.

@@ -1,6 +1,6 @@
 # RecallGraph feedback survey brief
 
-The public survey is created during the authorized publish step. Its URL is recorded in `submission/manifest.json` and verified as reachable.
+Submit feedback through the [RecallGraph product feedback form](https://github.com/ajanaku1/RecallGraph/issues/new?template=feedback.yml). The form is also recorded in `submission/manifest.json` and checked by the release verifier.
 
 ## Questions
 

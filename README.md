@@ -11,13 +11,17 @@ RecallGraph traces compromised training data into affected models and deployment
 
 ## Live Demo
 
-The public Vercel deployment is added during the Phase 6 publish step. Until then, run the fixture console locally at `http://localhost:3000`.
+**[https://recallgraph.vercel.app](https://recallgraph.vercel.app)**
 
 The hosted console uses recorded fixture evidence. It never presents fixture data as a live DataHub result.
 
 ## Demo Video
 
-The final video is published with the production deployment. It demonstrates the browser fixture journey and separately identifies the recorded live DataHub proof.
+No demo video is included in this release. The live application and screenshots cover the full fixture journey.
+
+## Feedback Survey
+
+Use the [RecallGraph product feedback form](https://github.com/ajanaku1/RecallGraph/issues/new?template=feedback.yml). Do not include confidential incident data, credentials, or personal information.
 
 ## What Is RecallGraph?
 
