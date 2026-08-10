@@ -17,7 +17,7 @@ The hosted console uses recorded fixture evidence. It never presents fixture dat
 
 ## Demo Video
 
-**[Watch the 2:03 RecallGraph demo](https://github.com/ajanaku1/RecallGraph/releases/download/v1.0.0-demo/recallgraph-demo.mp4)**
+**[Watch the 2 minutes RecallGraph demo](https://youtu.be/9NAoApdavoM)**
 
 The film uses Microsoft Edge TTS narration, burned-in captions, real product screenshots, and retained DataHub OSS evidence. It stays below the hackathon's three-minute limit.
 
