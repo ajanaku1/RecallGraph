@@ -13,4 +13,4 @@ Submit feedback through the [RecallGraph product feedback form](https://github.c
 7. What part of the recall workflow was unclear?
 8. Would you use RecallGraph during a real data or model incident?
 
-No respondent email or personal identifier is required.
+The form does not ask for an email or other personal details. A GitHub account is required to submit feedback.
