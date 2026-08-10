@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Fold closure stitch mark">
-  <g fill="none" stroke="#111718" stroke-linecap="round" stroke-linejoin="round" stroke-width="5">
-    <path d="M31 9V20L20 31"/>
-    <path d="M20 31L29 40H37L42 45V55"/>
-    <path d="M20 31L26 34H31L36 39L42 45"/>
-  </g>
-  <path d="M35 50H49" fill="none" stroke="#F05A3C" stroke-linecap="round" stroke-width="7"/>
-</svg>

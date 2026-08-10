@@ -8,8 +8,8 @@
     "lint": "eslint src tests scripts --max-warnings 0",
     "test:core": "npm run typecheck && node --test tests/core/*.test.ts",
     "test:function-checker": "node --test tests/scripts/check-function-length.test.ts",
+    "test:privacy": "node --test tests/scripts/public-repo-boundary.test.ts",
     "test:submission": "node --test tests/submission/submission-contract.test.ts",
-    "test:video": "node --test tests/video/*.test.ts",
     "verify:fixture": "node --test tests/catalog/*.test.ts && node scripts/verify_fixture.mjs",
     "seed:live-gate": "sh scripts/run_datahub_python.sh scripts/seed_live_gate.py",
     "test:live-gate": "sh scripts/run_datahub_python.sh tests/test_live_gate.py",
@@ -17,7 +17,7 @@
     "test:ui": "vitest run tests/app",
     "test:e2e:fixture": "vitest run tests/app",
     "verify:a11y": "vitest run tests/app/accessibility.test.tsx",
-    "test": "npm run test:core && npm run test:function-checker && npm run test:submission && npm run test:video && npm run verify:fixture && npm run test:ui && python3 -m unittest tests/test_live_gate_rollback.py tests/test_verify_live_gate_integration.py",
+    "test": "npm run test:core && npm run test:function-checker && npm run test:privacy && npm run test:submission && npm run verify:fixture && npm run test:ui && python3 -m unittest tests/test_live_gate_rollback.py tests/test_verify_live_gate_integration.py",
     "verify:submission": "node scripts/verify_submission.mjs",
     "build": "next build"
   },

@@ -1,1 +1,0 @@
-Approving ranking V two is not enough. RecallGraph binds each approval to the current case revision, so changed evidence makes stale approvals invalid. After both reviewed dispositions are recorded, a server-issued writeback reference unlocks the guarded close action.

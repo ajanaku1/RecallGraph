@@ -17,11 +17,12 @@ __pycache__/
 *.pyc
 .venv/
 
-# Generated media
-video/out/
+# Private creative production
+/brand/
+/video/
+/tests/video/
 
 # Local tooling
-.Codex/
 .DS_Store
 
 # Internal build contract
@@ -30,4 +31,5 @@ video/out/
 /prompt.md
 /plan.md
 /ai/
-/.evidence/phase-*.md
+/.evidence/*
+!/.evidence/live-gate.json
