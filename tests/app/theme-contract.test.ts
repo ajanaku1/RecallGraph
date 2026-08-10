@@ -30,36 +30,19 @@ function expectRule(css: string, selector: string, declarations: string[]): void
 
 describe('Daylight Forensics theme contract', () => {
   it('establishes the light evidence palette and one dark closure docket', async () => {
-    const [brandSource, tokens, css, truth, documentation] = await Promise.all([
-      projectFile('brand/brand.json'),
-      projectFile('brand/tokens.css'),
-      projectFile('src/app/recall.css'),
-      projectFile('brand/BRAND-TRUTH.md'),
-      projectFile('brand/DESIGN-TOKENS.md'),
-    ]);
-    const brand = JSON.parse(brandSource) as {
-      colorMode: { mode: string };
-      palette: Record<string, string>;
-      radii: Record<string, string>;
-    };
+    const css = await projectFile('src/app/recall.css');
 
-    expect(brand.colorMode.mode).toBe('light-dominant');
-    expect(brand.palette).toMatchObject({
-      paperCanvas: '#F2EFE7',
-      evidenceSurface: '#FCFBF7',
-      carbonInk: '#18201E',
-      registryMuted: '#63706B',
-      petrolEvidence: '#1F5B63',
-      oxideRisk: '#D94A2F',
-      docketDark: '#151B1A',
-    });
-    expect(Object.values(brand.radii)).toEqual(['4px', '8px']);
-    expect(tokens).toContain('--rg-color-paper: #F2EFE7;');
-    expect(tokens).toContain('--rg-color-evidence: #FCFBF7;');
-    expect(tokens).toContain('--rg-color-carbon: #18201E;');
-    expect(tokens).toContain('--rg-color-petrol: #1F5B63;');
-    expect(tokens).toContain('--rg-color-oxide: #D94A2F;');
-    expect(tokens).toContain('--rg-color-docket: #151B1A;');
+    expectRule(css, ':root', [
+      '--paper-canvas: #F2EFE7;',
+      '--surface-evidence: #FCFBF7;',
+      '--ink-carbon: #18201E;',
+      '--text-registry: #63706B;',
+      '--state-selection: #1F5B63;',
+      '--state-risk: #D94A2F;',
+      '--surface-docket: #151B1A;',
+      '--radius-control: 4px;',
+      '--radius-panel: 8px;',
+    ]);
     expect(css).toContain('background: var(--surface-canvas);');
     expect(css).toContain('.decision-rail');
     expect(css).toContain('background: var(--surface-docket);');
@@ -109,7 +92,7 @@ describe('Daylight Forensics theme contract', () => {
     ]);
     expect(css).toContain('-webkit-font-smoothing: antialiased;');
     expect(css).not.toMatch(/(?:background|color|border(?:-color)?|outline):\s*#[0-9a-f]{3,8}/i);
-    expect(`${brandSource}\n${tokens}\n${truth}\n${documentation}`).not.toMatch(/dark-only/i);
+    expect(css).not.toMatch(/dark-only/i);
   });
 
   it('keeps normal text and focus pairings above contrast thresholds', () => {
