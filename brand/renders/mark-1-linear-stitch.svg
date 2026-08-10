@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Linear closure stitch mark">
+  <g fill="none" stroke="#111718" stroke-linecap="round" stroke-linejoin="round" stroke-width="5">
+    <path d="M8 32H22"/>
+    <path d="M22 32C27 32 28 25 33 25H40C44 25 45 30 48 32"/>
+    <path d="M22 32C27 32 28 39 33 39H40C44 39 45 34 48 32"/>
+    <path d="M48 32H55"/>
+  </g>
+  <path d="M51 23V41" fill="none" stroke="#F05A3C" stroke-linecap="round" stroke-width="7"/>
+</svg>

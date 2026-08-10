@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Orbit closure stitch mark">
+  <g fill="none" stroke="#111718" stroke-linecap="round" stroke-linejoin="round" stroke-width="5">
+    <path d="M13 18C21 12 31 17 37 26C41 33 44 39 49 43"/>
+    <path d="M16 27C22 22 28 25 33 31C38 37 42 41 49 43"/>
+    <path d="M49 43L53 46"/>
+  </g>
+  <path d="M53 39L47 49" fill="none" stroke="#F05A3C" stroke-linecap="round" stroke-width="7"/>
+</svg>

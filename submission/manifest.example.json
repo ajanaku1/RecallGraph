@@ -1,0 +1,7 @@
+{
+  "schemaVersion": 1,
+  "repositoryUrl": "https://github.com/owner/RecallGraph",
+  "liveUrl": "https://recallgraph.example.com",
+  "demoVideoUrl": "https://video.example.com/recallgraph",
+  "feedbackSurveyUrl": "https://survey.example.com/recallgraph"
+}

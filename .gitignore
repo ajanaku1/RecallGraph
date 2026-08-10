@@ -1,0 +1,33 @@
+# Dependencies and build output
+node_modules/
+.next/
+dist/
+build/
+tsconfig.tsbuildinfo
+*.log
+
+# Secrets and local platform state
+.env
+.env.local
+.env*.local
+.vercel/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Generated media
+video/out/
+
+# Local tooling
+.Codex/
+.DS_Store
+
+# Internal build contract
+/design.md
+/Goal.md
+/prompt.md
+/plan.md
+/ai/
+/.evidence/phase-*.md

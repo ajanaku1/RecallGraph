@@ -1,0 +1,86 @@
+name: RecallGraph product feedback
+description: Share feedback on the recall workflow, evidence labels, and production needs.
+title: "Feedback: "
+labels:
+  - feedback
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for testing RecallGraph. Do not include confidential incident data, credentials, or personal information.
+  - type: dropdown
+    id: role
+    attributes:
+      label: Your role
+      options:
+        - Model risk
+        - Data governance
+        - ML engineering
+        - Platform engineering
+        - Security
+        - Other
+    validations:
+      required: true
+  - type: dropdown
+    id: blocked_reason
+    attributes:
+      label: Could you identify why the recall was blocked before approval?
+      options:
+        - Yes
+        - Partly
+        - No
+    validations:
+      required: true
+  - type: dropdown
+    id: lineage_clarity
+    attributes:
+      label: Did the lineage view make the affected models and deployment clear?
+      options:
+        - Yes
+        - Partly
+        - No
+    validations:
+      required: true
+  - type: dropdown
+    id: evidence_mode
+    attributes:
+      label: Was the difference between live DataHub evidence and fixture evidence clear?
+      options:
+        - Yes
+        - Partly
+        - No
+    validations:
+      required: true
+  - type: dropdown
+    id: receipt_disclaimer
+    attributes:
+      label: Did the receipt disclaimer explain what SHA-256 does and does not prove?
+      options:
+        - Yes
+        - Partly
+        - No
+    validations:
+      required: true
+  - type: textarea
+    id: production_integration
+    attributes:
+      label: Which missing integration would matter most for production use?
+      placeholder: Catalog, identity provider, ticketing, deployment controls, or another system.
+    validations:
+      required: true
+  - type: textarea
+    id: unclear_step
+    attributes:
+      label: What part of the recall workflow was unclear?
+    validations:
+      required: false
+  - type: dropdown
+    id: real_incident
+    attributes:
+      label: Would you use RecallGraph during a real data or model incident?
+      options:
+        - Yes
+        - Maybe
+        - No
+    validations:
+      required: true

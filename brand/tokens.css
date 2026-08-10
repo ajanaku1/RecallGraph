@@ -1,0 +1,58 @@
+:root {
+  /* Daylight Forensics primitives. */
+  --rg-color-paper: #F2EFE7;
+  --rg-color-evidence: #FCFBF7;
+  --rg-color-carbon: #18201E;
+  --rg-color-registry: #63706B;
+  --rg-color-petrol: #1F5B63;
+  --rg-color-oxide: #D94A2F;
+  --rg-color-docket: #151B1A;
+  --rg-color-heritage-vermilion: #F05A3C;
+
+  /* Semantic roles keep the evidence workspace light and the docket singular. */
+  --rg-surface-canvas: var(--rg-color-paper);
+  --rg-surface-evidence: var(--rg-color-evidence);
+  --rg-surface-docket: var(--rg-color-docket);
+  --rg-text-primary: var(--rg-color-carbon);
+  --rg-text-secondary: var(--rg-color-registry);
+  --rg-text-on-docket: var(--rg-color-evidence);
+  --rg-border-subtle: #BBC2BA;
+  --rg-border-strong: var(--rg-color-registry);
+  --rg-state-selection: var(--rg-color-petrol);
+  --rg-state-risk: var(--rg-color-oxide);
+  --rg-state-risk-quiet: #FBE3DC;
+
+  --rg-focus-color: var(--rg-color-petrol);
+  --rg-focus-shadow: 0 0 0 3px var(--rg-focus-color);
+  --rg-font-display: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Georgia, serif;
+  --rg-font-body: "Avenir Next", Avenir, "Segoe UI", sans-serif;
+
+  --rg-space-1: 4px;
+  --rg-space-2: 8px;
+  --rg-space-3: 12px;
+  --rg-space-4: 16px;
+  --rg-space-5: 24px;
+  --rg-space-6: 32px;
+  --rg-space-7: 48px;
+  --rg-space-8: 64px;
+
+  --rg-radius-control: 4px;
+  --rg-radius-panel: 8px;
+  --rg-duration-fast: 160ms;
+  --rg-duration-standard: 220ms;
+  --rg-duration-max: 240ms;
+  --rg-ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+:focus-visible {
+  outline: 3px solid var(--rg-focus-color);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --rg-duration-fast: 1ms;
+    --rg-duration-standard: 1ms;
+    --rg-duration-max: 1ms;
+  }
+}

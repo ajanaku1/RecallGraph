@@ -1,0 +1,62 @@
+{
+  "name": "RecallGraph",
+  "tagline": "Every affected model. Traced. Resolved.",
+  "selectedCandidate": {
+    "id": "mark-1-linear-stitch",
+    "name": "Linear Stitch",
+    "source": "brand/renders/mark-1-linear-stitch.svg",
+    "status": "approved"
+  },
+  "logo": {
+    "primary": "public/logo.svg",
+    "favicon": "public/favicon.svg",
+    "raster": "public/logo.png",
+    "viewBox": "0 0 64 64",
+    "carrier": "#F4F0E8 warm-bone square carrier"
+  },
+  "colorMode": {
+    "mode": "light-dominant",
+    "reason": "Daylight Forensics makes evidence readable across sustained investigation. The docket remains a single carbon closure surface, not a separate visual mode."
+  },
+  "palette": {
+    "paperCanvas": "#F2EFE7",
+    "evidenceSurface": "#FCFBF7",
+    "carbonInk": "#18201E",
+    "registryMuted": "#63706B",
+    "petrolEvidence": "#1F5B63",
+    "oxideRisk": "#D94A2F",
+    "docketDark": "#151B1A",
+    "heritageMarkVermilion": "#F05A3C"
+  },
+  "typography": {
+    "display": "Iowan Old Style, Palatino Linotype, Book Antiqua, Georgia, serif",
+    "body": "Avenir Next, Avenir, Segoe UI, sans-serif"
+  },
+  "radii": {
+    "control": "4px",
+    "panel": "8px"
+  },
+  "spacing": {
+    "1": "4px",
+    "2": "8px",
+    "3": "12px",
+    "4": "16px",
+    "5": "24px",
+    "6": "32px",
+    "7": "48px",
+    "8": "64px"
+  },
+  "motion": {
+    "durationFast": "160ms",
+    "durationStandard": "220ms",
+    "durationMaximum": "240ms",
+    "easing": "cubic-bezier(0.16, 1, 0.3, 1)",
+    "rule": "Use opacity and transform for purposeful feedback only; respect reduced motion."
+  },
+  "logoCarrierRule": "The approved Linear Stitch geometry remains unchanged. Its graphite lineage and heritage vermilion closure stitch stay on the warm-bone carrier; do not reverse, recolor, or introduce a new logo variant.",
+  "state": {
+    "selection": "Petrol pairs an aria-pressed state with a thicker border and inset keyline; selection is never colour-only.",
+    "risk": "Oxide is reserved for risk strokes, closure stitching, and large/high-emphasis treatment. It is not small normal text on light evidence surfaces.",
+    "complete": "Use explicit written status and a non-colour cue alongside petrol or carbon treatment; do not introduce green."
+  }
+}
