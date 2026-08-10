@@ -1,0 +1,11 @@
+1
+00:00:00,050 --> 00:00:02,500
+Approving ranking V two is not enough.
+
+2
+00:00:02,500 --> 00:00:09,238
+RecallGraph binds each approval to the current case revision, so changed evidence makes stale approvals invalid.
+
+3
+00:00:09,238 --> 00:00:15,964
+After both reviewed dispositions are recorded, a server-issued writeback reference unlocks the guarded close action.

@@ -4,7 +4,7 @@ RecallGraph traces compromised training data into affected models and deployment
 
 [![TypeScript](https://img.shields.io/badge/TypeScript-6.0-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Next.js](https://img.shields.io/badge/Next.js-16-black?logo=next.js)](https://nextjs.org/)
-[![Tests](https://img.shields.io/badge/tests-100_passing-1F5B63)](#testing)
+[![Tests](https://img.shields.io/badge/tests-102_passing-1F5B63)](#testing)
 [![License](https://img.shields.io/badge/license-Apache--2.0-D94A2F)](LICENSE)
 
 ![RecallGraph recall command console](docs/images/landing.png)
@@ -17,7 +17,9 @@ The hosted console uses recorded fixture evidence. It never presents fixture dat
 
 ## Demo Video
 
-No demo video is included in this release. The live application and screenshots cover the full fixture journey.
+**[Watch the 2:03 RecallGraph demo](https://github.com/ajanaku1/RecallGraph/releases/download/v1.0.0-demo/recallgraph-demo.mp4)**
+
+The film uses Microsoft Edge TTS narration, burned-in captions, real product screenshots, and retained DataHub OSS evidence. It stays below the hackathon's three-minute limit.
 
 ## Feedback Survey
 
@@ -197,6 +199,7 @@ The verification step reads lineage through `mcp-server-datahub==0.6.0`. It writ
 | `npm run lint` | Run ESLint across source, tests, and scripts |
 | `npm run typecheck` | Run strict TypeScript validation |
 | `npm test` | Run core, fixture, UI, submission, and rollback tests |
+| `npm run test:video` | Verify the video story, evidence, captions, and duration contract |
 | `npm run verify:fixture` | Prove the planted fixture journey and receipt mismatch |
 | `npm run seed:live-gate` | Seed the minimal DataHub lineage graph |
 | `npm run test:live-gate` | Check the seeded DataHub graph without mutation |
@@ -230,6 +233,7 @@ The suite covers graph cycles and duplicates, closure blockers, semantic boundar
 │   └── core/              # Pure deterministic recall engine
 ├── submission/            # Judge-facing copy and evidence manifest
 ├── tests/                 # Core, UI, live-gate, and contract tests
+├── video/                 # Remotion source, Edge-TTS narration, and video evidence
 ├── LICENSE                # Apache License 2.0
 └── verify.sh              # Phase verification entry point
 ```

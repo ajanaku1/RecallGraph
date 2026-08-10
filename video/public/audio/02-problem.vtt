@@ -1,0 +1,7 @@
+1
+00:00:00,050 --> 00:00:06,452
+Most catalogs can show lineage, but an incident still closes through screenshots, tickets, and memory.
+
+2
+00:00:06,452 --> 00:00:18,190
+RecallGraph turns that gap into a deterministic model recall command: trace every affected descendant, require human dispositions, and fail closed until the evidence is complete.

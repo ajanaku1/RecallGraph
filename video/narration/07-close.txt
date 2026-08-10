@@ -1,0 +1,1 @@
+RecallGraph is public under Apache two point zero, deployed on Vercel, and covered by one hundred automated checks plus a green production build. Every affected model, traced and resolved. Open the live recall command or inspect the repository.

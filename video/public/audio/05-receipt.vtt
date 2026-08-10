@@ -1,0 +1,15 @@
+1
+00:00:00,050 --> 00:00:10,023
+Closing the case exports the complete lineage, event, decisions, approvals, uncertainty resolutions, and writeback evidence as canonical JSON.
+
+2
+00:00:10,023 --> 00:00:13,845
+SHA two fifty-six produces a stable integrity digest.
+
+3
+00:00:13,845 --> 00:00:15,535
+A trusted match passes.
+
+4
+00:00:15,535 --> 00:00:20,952
+Plant one mismatch, and verification fails without pretending the checksum is a signature.

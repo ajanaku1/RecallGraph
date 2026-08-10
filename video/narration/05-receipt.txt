@@ -1,0 +1,1 @@
+Closing the case exports the complete lineage, event, decisions, approvals, uncertainty resolutions, and writeback evidence as canonical JSON. SHA two fifty-six produces a stable integrity digest. A trusted match passes. Plant one mismatch, and verification fails without pretending the checksum is a signature.

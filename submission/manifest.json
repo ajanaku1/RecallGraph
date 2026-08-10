@@ -2,6 +2,6 @@
   "schemaVersion": 1,
   "repositoryUrl": "https://github.com/ajanaku1/RecallGraph",
   "liveUrl": "https://recallgraph.vercel.app",
-  "demoVideoUrl": null,
+  "demoVideoUrl": "https://github.com/ajanaku1/RecallGraph/releases/download/v1.0.0-demo/recallgraph-demo.mp4",
   "feedbackSurveyUrl": "https://github.com/ajanaku1/RecallGraph/issues/new?template=feedback.yml"
 }

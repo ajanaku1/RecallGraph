@@ -1,0 +1,1 @@
+This case starts with a revoked source. The normalized graph reaches two models and one production deployment. Both model decisions are unresolved, so closure and writeback are blocked. The hosted console is clearly labeled fixture evidence; the workflow is deterministic and repeatable for every judge.

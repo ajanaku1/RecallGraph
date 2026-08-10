@@ -1,0 +1,173 @@
+{
+  "deploymentAssociation": "MLModelProperties.deployments",
+  "deploymentUrn": "urn:li:mlModelDeployment:(urn:li:dataPlatform:recallgraph,license-classifier-prod,PROD)",
+  "gmsUrl": "http://127.0.0.1:8080",
+  "mcp": {
+    "downstreams": {
+      "facets": [
+        {
+          "aggregations": [
+            {
+              "count": 0,
+              "value": "1"
+            },
+            {
+              "count": 0,
+              "value": "2"
+            },
+            {
+              "count": 0,
+              "value": "3+"
+            }
+          ],
+          "displayName": "Degree of Dependencies",
+          "field": "degree"
+        },
+        {
+          "aggregations": [
+            {
+              "count": 2,
+              "value": "MLMODEL"
+            },
+            {
+              "count": 1,
+              "value": "DATA_PROCESS_INSTANCE"
+            }
+          ],
+          "displayName": "Type",
+          "field": "_entityType"
+        },
+        {
+          "aggregations": [
+            {
+              "count": 2,
+              "entity": {
+                "urn": "urn:li:dataPlatform:recallgraph"
+              },
+              "value": "urn:li:dataPlatform:recallgraph"
+            }
+          ],
+          "displayName": "Platform",
+          "field": "platform"
+        },
+        {
+          "aggregations": [
+            {
+              "count": 2,
+              "value": "PROD"
+            }
+          ],
+          "displayName": "Environment",
+          "field": "origin"
+        },
+        {
+          "aggregations": [
+            {
+              "count": 2,
+              "value": "MLMODEL"
+            },
+            {
+              "count": 1,
+              "value": "DATA_PROCESS_INSTANCE"
+            }
+          ],
+          "displayName": "Type\u241eSub Type",
+          "field": "_entityType\u241etypeNames"
+        },
+        {
+          "aggregations": [
+            {
+              "count": 0,
+              "value": "true"
+            }
+          ],
+          "displayName": "removed",
+          "field": "removed"
+        },
+        {
+          "aggregations": [
+            {
+              "count": 1,
+              "value": "BATCH_SCHEDULED"
+            }
+          ],
+          "displayName": "Process Type",
+          "field": "processType"
+        },
+        {
+          "aggregations": [
+            {
+              "count": 2,
+              "value": "MLMODEL"
+            },
+            {
+              "count": 1,
+              "value": "DATA_PROCESS_INSTANCE"
+            }
+          ],
+          "displayName": "Type",
+          "field": "entity"
+        }
+      ],
+      "hasMore": false,
+      "offset": 0,
+      "returned": 3,
+      "searchResults": [
+        {
+          "degree": 2,
+          "entity": {
+            "description": "Affected classifier model in the RecallGraph live gate.",
+            "name": "license-classifier",
+            "origin": "PROD",
+            "platform": {
+              "name": "recallgraph",
+              "urn": "urn:li:dataPlatform:recallgraph"
+            },
+            "type": "MLMODEL",
+            "urn": "urn:li:mlModel:(urn:li:dataPlatform:recallgraph,license-classifier,PROD)"
+          }
+        },
+        {
+          "degree": 2,
+          "entity": {
+            "description": "Affected risk scorer model in the RecallGraph live gate.",
+            "name": "license-risk-scorer",
+            "origin": "PROD",
+            "platform": {
+              "name": "recallgraph",
+              "urn": "urn:li:dataPlatform:recallgraph"
+            },
+            "type": "MLMODEL",
+            "urn": "urn:li:mlModel:(urn:li:dataPlatform:recallgraph,license-risk-scorer,PROD)"
+          }
+        },
+        {
+          "degree": 1,
+          "entity": {
+            "type": "DATA_PROCESS_INSTANCE",
+            "urn": "urn:li:dataProcessInstance:recallgraph-license-training-run"
+          }
+        }
+      ],
+      "total": 3
+    },
+    "server": "mcp-server-datahub",
+    "tool": "get_lineage",
+    "version": "0.6.0"
+  },
+  "mode": "live-datahub-oss",
+  "modelUrns": [
+    "urn:li:mlModel:(urn:li:dataPlatform:recallgraph,license-classifier,PROD)",
+    "urn:li:mlModel:(urn:li:dataPlatform:recallgraph,license-risk-scorer,PROD)"
+  ],
+  "mutation": {
+    "aspect": "datasetProperties",
+    "before": null,
+    "key": "recallgraph.phase0.liveGateProbe",
+    "readback": "LICENSE_REVOKED",
+    "rollback": null,
+    "written": "LICENSE_REVOKED"
+  },
+  "schemaVersion": 1,
+  "sourceUrn": "urn:li:dataset:(urn:li:dataPlatform:recallgraph,license-revoked-training,PROD)"
+}
