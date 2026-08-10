@@ -54,11 +54,32 @@ test('submission verification rejects an overlong demo and private repository', 
   }
 });
 
-function services(options: { duration?: number; privateRepo?: boolean } = {}) {
+test('submission verification checks public evidence without downloading response bodies', async () => {
+  const directory = await mkdtemp(join(tmpdir(), 'recallgraph-submission-'));
+  const requests: Array<{ url: string; method: string | undefined }> = [];
+  try {
+    await writeFixture(directory);
+    const issues: string[] = await verifySubmission(directory, services({ requests }));
+
+    assert.deepEqual(issues, []);
+    const publicChecks = requests.filter(({ url }) => !url.startsWith('https://api.github.com/'));
+    assert.equal(publicChecks.length, 3);
+    assert.ok(publicChecks.every(({ method }) => method === 'HEAD'));
+  } finally {
+    await rm(directory, { recursive: true, force: true });
+  }
+});
+
+function services(options: {
+  duration?: number;
+  privateRepo?: boolean;
+  requests?: Array<{ url: string; method: string | undefined }>;
+} = {}) {
   return {
     probeVideoDuration: async () => options.duration ?? 120,
-    fetch: async (input: string | URL | Request) => {
+    fetch: async (input: string | URL | Request, init?: RequestInit) => {
       const url = String(input);
+      options.requests?.push({ url, method: init?.method });
       if (url.startsWith('https://api.github.com/repos/')) {
         return Response.json({
           private: options.privateRepo ?? false,

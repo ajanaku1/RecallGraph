@@ -45,7 +45,7 @@ The live mutation gate had another failure mode: a readback error could leave Da
 - The fixture journey exposes blocked, approved, writeback, closed, trusted-match, and planted-mismatch states.
 - The DataHub gate retains real MCP lineage and reversible writeback evidence.
 - The interface supports keyboard inspection, native dialog behavior, reduced motion, mobile lineage order, recovery boundaries, and high-contrast states.
-- One hundred and two automated checks cover the core, route boundary, UI journey, rollback control flow, submission contract, and demo-video evidence.
+- One hundred and three automated checks cover the core, route boundary, UI journey, rollback control flow, submission contract, and demo-video evidence.
 
 ## What we learned
 

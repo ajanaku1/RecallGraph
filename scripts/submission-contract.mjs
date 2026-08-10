@@ -144,7 +144,7 @@ async function checkRepository(coordinates, liveUrl, fetcher, issues) {
 async function checkReachable(label, url, fetcher, issues) {
   if (!isHttpsUrl(url)) return;
   try {
-    const response = await fetcher(url, { redirect: 'follow' });
+    const response = await fetcher(url, { method: 'HEAD', redirect: 'follow' });
     if (!response.ok) issues.push(`${label} returned HTTP ${response.status}.`);
   } catch {
     issues.push(`${label} is not reachable.`);

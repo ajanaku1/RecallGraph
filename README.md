@@ -4,7 +4,7 @@ RecallGraph traces compromised training data into affected models and deployment
 
 [![TypeScript](https://img.shields.io/badge/TypeScript-6.0-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Next.js](https://img.shields.io/badge/Next.js-16-black?logo=next.js)](https://nextjs.org/)
-[![Tests](https://img.shields.io/badge/tests-102_passing-1F5B63)](#testing)
+[![Tests](https://img.shields.io/badge/tests-103_passing-1F5B63)](#testing)
 [![License](https://img.shields.io/badge/license-Apache--2.0-D94A2F)](LICENSE)
 
 ![RecallGraph recall command console](docs/images/landing.png)
